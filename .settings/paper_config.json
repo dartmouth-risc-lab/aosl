@@ -1,0 +1,99 @@
+{
+  "venue": "iccp-tpami",
+  "title": "Structured light with a million light planes per second",
+  "site_url": "",
+  "social_desc": "Sound to steer light planes at megahertz speeds, million fps depth scans",
+  "keywords": "Acousto-optics, 1M fps depth scans, beam steering",
+  "institutions": [
+    {
+      "name": "Dartmouth College",
+      "color": "#1F673C"
+    },
+    {
+      "name": "University of North Carolina at Chapel Hill",
+      "color": "#4b9cd3"
+    },
+    {
+      "name": "Carnegie Mellon University",
+      "color": "#e03c31"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Dhawal Sirikonda",
+      "url": "https://dhawal.xyz",
+      "institute_idx": 1
+    },
+    {
+      "name": "Praneeth Chakravarthula",
+      "url": "https://www.cs.unc.edu/~cpk/",
+      "institute_idx": 2
+    },
+    {
+      "name": "Ioannis Gkioulekas",
+      "url": "https://www.cs.cmu.edu/~igkioule/",
+      "institute_idx": 3
+    },
+    
+    {
+      "name": "Adithya Pediredla",
+      "url": "https://sites.google.com/view/adithyapediredla/",
+      "institute_idx": 1
+    }
+  ],
+  "footnotes": {
+    "equal_contribution": {
+      "first_n": 1
+    },
+    "equal_guidance": {
+      "last_n": 1
+    }
+  },
+  "acceptance_text": "ICCP 2025 & IEEE TPAMI",
+  "abstract_html": "",
+  "abstract_text": "We introduce a structured light system that enables full-frame 3D scanning at speeds of 1000 fps, four times faster than the previous fastest systems. Our key innovation is the use of a custom acousto-optic light scanning device capable of projecting two million light planes per second. Coupling this device with an event camera allows our system to overcome the key bottleneck preventing previous structured light systems based on event cameras from achieving higher scanning speeds---the limited rate of illumination steering. Unlike these previous systems, ours uses the event camera's full-frame bandwidth, shifting the speed bottleneck from the illumination side to the imaging side. To mitigate this new bottleneck and further increase scanning speed, we introduce adaptive scanning strategies that leverage the event camera's asynchronous operation by selectively illuminating regions of interest, thereby achieving effective scanning speeds an order of magnitude beyond the camera's theoretical limit.",
+
+  "abstract_file": "",
+  "teaser_image": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\aosl_src\\static\\images\\teaser.png",
+  "teaser_caption": "We present a structured light technology that combines acousto-optic light steering with an event camera for high-speed full-frame scanning. Left: Schematic of our setup. We use an ultrasonic transducer to sculpt virtual gradient-index (GRIN) cylindrical lenses inside a transparent medium (water). Coupling this setup with pulsed illumination, we can scan the imaged scene with a light plane at speeds three orders of magnitude faster than those of previous light scanning methods, allowing structured light operation at the camera's full-frame bandwidth. Top-right: RGB images, captured at 240 fps, of a scene comprising a fan that rotates at 1800 rpm. The images correspond to the approximate positions of the depth scans below. Bottom-right: Reconstructed depth frames of the rotating fan, scanned at 1000 fps.",
+  "gallery": [
+    {
+      "path": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\aosl_src\\static\\images\\hardware_prototype.png",
+      "caption": "Hardware implementation of the setup shown in the schematic. (a) AO light scanning device. A pulsed laser (PL) emits a beam that is expanded by a convex lens and directed into a refractive medium (RM). An ultrasonic transducer (T), perpendicular to the beam, generates acoustic waves that sculpt cylindrical lenses in the medium. These lenses focus the light into sweeping light planes, which are then redirected by a fixed mirror onto a Galvo mirror. During acousto-optic scanning, the Galvo mirror remains stationary. Conversely, when using the Galvo mirror for scanning, the transducer and pulse frequency are constant. (b) Scanning setup. The AO device from (a) is shown in green. The scene (in cyan) contains orthogonal planes for calibration. The laser and ultrasound are driven by an arbitrary waveform generator (AWG). (c) Phase-lock-loop (PLL) synchronization of the transducer with the pulsed laser, driven via Channels 1 and 2 (Ch1, Ch2) of the AWG. Channel 1’s output is amplified using an amplifier (Amp). This PLL synchronization ensures accurate pulse placement with respect to the ultrasound."
+    },
+    {
+      "path": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\aosl_src\\static\\images\\galvo_vs_us.png",
+      "caption": "Adaptive scanning of two regions of interest (orange knobs) in a scene shown in (a). We aim to illuminate and 3D scan only the knobs (b), using both the Galvo mirror and our AO device. In (c), we show the depth error measured for these knobs when we scan with the two devices. At low scan rates, the Galvo mirror is effective at adaptively scanning only the knobs, but its performance deteriorates as the scan rate increases: Due to the need to mechanically rotate the beam from one location to another, the Galvo mirror must also illuminate the region between the knobs. At high scanning speeds, the fraction of total scanning time spent illuminating this region increases, decreasing performance. By contrast, our AO device can illuminate only the knobs, resulting in effective adaptive scanning even at 10 kfps."
+    },
+    {
+      "path": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\aosl_src\\static\\images\\light_plane_movement.png",
+      "caption": "(a) We show the refractive index profile created by the ultrasonic transducer and how light traveling from bottom to top focuses onto lines. (b) As the refractive index profile evolves over time, the focal line is steered across the medium. (c) Captured images demonstrate the temporal movement of the focused line."
+    },
+    {
+      "path": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\aosl_src\\static\\images\\adaptive_light_plane_placement.png",
+      "caption": "Experimental validation of arbitrary line scanning. Our AO device allows us to place each of the 2-million lines it produces at any desired location. To validate this ability, we use a fast photodetector (PD) mounted on a stage (a). We illuminate two arbitrary lines (Line 1 and Line 2) and translate the PD to their locations. We show the output of the PD in plots (c)--(e) (top: PD is on a point on Line 1, bottom: PD is on a point on Line 2) for various choices of illumination sequences. In (c), we alternately illuminate Line 1 and Line 2, corresponding to the odd and even peaks in the PD output. In (d), we illuminate Line 1 for 100 laser pulses and Line 2 for 100 laser pulses, corresponding to a PD output that is a square waveform of frequency 10 kHz. In (e), we illuminate Line 1 for 50 laser pulses and Line 2 for 150 laser pulses, corresponding to a PD output that has a duty cycle of 25% when it is on Line 1 and 75% when it is on Line 2."
+    },
+    {
+      "path": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\aosl_src\\static\\images\\megahertz_line_speed.png",
+      "caption": "Experimental validation of high-speed line scanning. (a) Experimental setup showing a fast photodetector placed in front of our AO scanning system. The detector output increases when the scanned line crosses it. (b) Visualization of the projected scanning line illuminating the photodetector. Bottom: Oscilloscope traces read out from the photodetector. The traces show periodic intensity peaks corresponding to scanning frequencies of 1 kfps, 10 kfps, and 100 kfps (left to right). The temporal spacing between adjacent peaks confirms successful line scanning at these frequencies."
+    },
+    {
+      "path": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\aosl_src\\static\\images\\dynamic_results.png",
+      "caption": "Non-periodic dynamic scenes: Depth scans of characters \"IC\", \"CP\", and \"25\", covered with retroreflecting tape. In the top and middle rows, the characters are mounted on a stick and moved rapidly in a top-to-bottom (↕) sweeping motion, with some additional forward-backward translation (⊙). In the bottom row, the characters are swung by hand using a string. For each row, the RGB image to the left shows the scene and visualizes the approximate motion trajectory. The images to the right show the depth frames at different points of the trajectory, captured at 180 fps (top and middle row) or 200 fps (bottom row). The supplement includes a video of continuous depth scanning as the targets move."
+    }
+  ],
+  "method_html": "",
+  "method_text": "",
+  "method_video": "",
+  "links": {
+    "paper": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\aosl_src\\static\\pdfs\\aosl_iccp_2025.pdf",
+    "material": "https://www.dropbox.com/scl/fi/09cqlms7k2bops3y9wpcy/aosl_suppl.zip?rlkey=0x28ko6jl5id419mmsvkxrp8w&st=3zq0c1kg&dl=0",
+    "video": "",
+    "presentation": "",
+    "poster": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\aosl_src\\static\\pdfs\\aosl_poster.pdf"
+  },
+
+  "bibtex": "@article{sirikonda2025structured,  \ntitle={Structured light with a million light planes per second},  \nauthor={Sirikonda, Dhawal and Chakravarthula, Praneeth and Gkioulekas, Ioannis and Pediredla, Adithya},  \njournal={IEEE Transactions on Pattern Analysis and Machine Intelligence},  \nyear={2025},\npublisher={IEEE}\n}",
+
+  "acknowledgments_text": "This work was supported by the National Science Foundation under awards 2047341, 2107454, 2326904, and 2403122, as well as a Sloan Research Fellowship for Ioannis Gkioulekas. We thank Aniket Dashpute (Rice University) and Manasi Muglikar (University of Zurich) for their valuable insights on event camera parameters. We also thank Ziyuan (Quinton) Qu and Sarah K. Friday (Dartmouth College), for their assistance in setting up the experimental scenes."
+}

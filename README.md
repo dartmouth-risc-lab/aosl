@@ -1,3 +1,3 @@
-# Webpage for AOSL(Acousto-Optic Structured Light).
+# Structured light with a million light planes per second
 
-Structured Light with a million light planes a second
+Venue: ICCP 2025 & IEEE TPAMI

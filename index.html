@@ -1,372 +1,154 @@
 <!DOCTYPE html>
-<html style="font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;">
-<head>
+<html lang="en" data-venue="iccp-tpami"><head>
   <meta charset="utf-8">
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sound to steer light planes at megahertz speeds, million fps depth scans">
+  <meta property="og:title" content="Structured light with a million light planes per second" />
+  <meta property="og:description" content="Sound to steer light planes at megahertz speeds, million fps depth scans" />
   <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:title" content="Structured light with a million light planes per second">
+  <meta name="twitter:description" content="Sound to steer light planes at megahertz speeds, million fps depth scans">
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="Structured Light, Acousto-Optic Scanning, Event Camera, High-Speed 3D Scanning, Computer Vision, ICCP 2025, PAMI Special Issue">
-  <meta name="author" content="Dhawal Sirikonda, Praneeth Chakravarthula, Ioannis Gkioulekas, Adithya Pediredla">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>AOSL</title>
-  <link rel="icon" type="image/favicon.ico" href="static/images/icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <meta name="keywords" content="Acousto-optics, 1M fps depth scans, beam steering">
+  <meta name="author" content="Dhawal Sirikonda, Praneeth Chakravarthula, Ioannis Gkioulekas, Adithya Pediredla">  <title>Structured light with a million light planes per second</title>
+  <link rel="icon" href="static/images/icon.png" type="image/png">  <!-- CSS -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- Your overrides must come last -->
   <link rel="stylesheet" href="static/css/index.css">
-
+  <link rel="stylesheet" href="static/css/custom-fonts.css">
+  <style>
+    /* affiliation color injections from the script */
+    .publication-authors .author-block.affil-1, .publication-authors .author-block.affil-1 a { color: #1F673C !important; font-weight: 600; }
+.publication-authors .affiliations .affil-1 { color: #1F673C; font-weight: 600; }
+.publication-authors .author-block.affil-2, .publication-authors .author-block.affil-2 a { color: #4b9cd3 !important; font-weight: 600; }
+.publication-authors .affiliations .affil-2 { color: #4b9cd3; font-weight: 600; }
+.publication-authors .author-block.affil-3, .publication-authors .author-block.affil-3 a { color: #e03c31 !important; font-weight: 600; }
+.publication-authors .affiliations .affil-3 { color: #e03c31; font-weight: 600; }
+  </style>  <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
-</head>
-<body>
-
-
+</head><body>
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Structured light with a million light planes per second</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://dhawal.xyz" target="_blank">Dhawal Sirikonda<sup>1</sup></a>,
+            <h1 class="title is-1 publication-title">Structured light with a million light planes per second</h1>            <div class="is-size-5 publication-authors"><span class="author-block affil-1"><a href="https://dhawal.xyz" target="_blank">Dhawal Sirikonda</a></span>, <span class="author-block affil-2"><a href="https://www.cs.unc.edu/~cpk/" target="_blank">Praneeth Chakravarthula</a></span>, <span class="author-block affil-3"><a href="https://www.cs.cmu.edu/~igkioule/" target="_blank">Ioannis Gkioulekas</a></span>, <span class="author-block affil-1"><a href="https://sites.google.com/view/adithyapediredla/" target="_blank">Adithya Pediredla</a></span></div>            <div class="is-size-5 publication-authors">
+              <div class="author-block">                <div class="affiliations"><span class="affil-1">Dartmouth College</span>, <span class="affil-2">University of North Carolina at Chapel Hill</span>, <span class="affil-3">Carnegie Mellon University</span></div>
+              </div>
+            </div>            <div class="publication-links">
+              <span class="link-block"><a href="static/pdfs/paper.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span></a></span>
+              <span class="link-block"><a href="https://www.dropbox.com/scl/fi/09cqlms7k2bops3y9wpcy/aosl_suppl.zip?rlkey=0x28ko6jl5id419mmsvkxrp8w&st=3zq0c1kg&dl=0" target="_blank" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fab fa-github"></i></span><span>Additional Material</span></a></span>              <span class="link-block"><a href="static/pdfs/poster.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark"><span class="icon"><i class="fas fa-image"></i></span><span>Poster</span></a></span>              <span class="link-block">
+                <a href="#BibTeX" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-book"></i></span>
+                  <span>Citation</span>
+                </a>
               </span>
-                <span class="author-block">
-                <a href="https://www.cs.unc.edu/~cpk/" target="_blank">Praneeth Chakravarthula<sup>2</sup></a>,
-              </span>
-              <span class="author-block">
-                  <a href="https://www.cs.cmu.edu/~igkioule/" target="_blank">Ioannis Gkioulekas<sup>3</sup></a>,
-              </span>
-              <span class="author-block">
-                  <a href="https://sites.google.com/view/adithyapediredla/" target="_blank">Adithya Pediredla<sup>1</sup></a>
-              </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Dartmouth, <sup>2</sup>UNC Chapel Hill, <sup>3</sup>CMU<br>ICCP 2025 (PAMI Special Issue)</span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/abs/2411.18597" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                  <span class="link-block">
-                    <a href="https://www.dropbox.com/scl/fi/09cqlms7k2bops3y9wpcy/aosl_suppl.zip?rlkey=0x28ko6jl5id419mmsvkxrp8w&st=3zq0c1kg&dl=0" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Supplementary</span>
-                  </a>
-                </span>
-            </div>
-          </div>
+            </div>            <p class="acceptance-tag" style="background-image: linear-gradient(90deg, #1F673C 0%, #4b9cd3 50%, #e03c31 100%);">
+              <strong>ICCP 2025 & IEEE TPAMI</strong>
+            </p>          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-<!-- Teaser image-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/teaser.png" alt="Teaser Image" style="width: 100%;" />
-      <h2 class="subtitle has-text-centered">
-        We present a structured light technology that combines acousto-optic light steering with an event camera for high-speed
-        full-frame scanning. Left: Schematic of our setup. We use an ultrasonic transducer to sculpt virtual gradient-index
-        (GRIN) cylindrical lenses inside a transparent medium (water). Coupling this setup with pulsed illumination, we can scan
-        the imaged scene with a light plane at speeds three orders of magnitude faster than those of previous light scanning
-        methods, allowing structured light operation at the camera's full-frame bandwidth. Top-right: RGB images, captured at
-        240 fps, of a scene comprising a fan that rotates at 1800 rpm. The images correspond to the approximate
-        positions of the depth scans below. Bottom-right: Reconstructed depth frames of the rotating fan, scanned at
-        1000 fps.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser image -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>We introduce a structured light system that enables full-frame 3D scanning at speeds of 1000 fps, four times
-          faster than the previous fastest systems. Our key innovation is the use of a custom acousto-optic light scanning device
-          capable of projecting two million light planes per second. Coupling this device with an event camera allows our system
-          to overcome the key bottleneck preventing previous structured light systems based on event cameras from achieving higher
-          scanning speeds---the limited rate of illumination steering. Unlike these previous systems, ours uses the event camera's
-          full-frame bandwidth, shifting the speed bottleneck from the illumination side to the imaging side. To mitigate this new
-          bottleneck and further increase scanning speed, we introduce adaptive scanning strategies that leverage the event
-          camera's asynchronous operation by selectively illuminating regions of interest, thereby achieving effective scanning
-          speeds an order of magnitude beyond the camera's theoretical limit.</p>
-          </p>
-        </div>
+  </section>  <!-- Teaser -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/teaser.png" alt="Teaser Image" style="width: 100%;" />
+        <h4 class="subtitle has-text-centered">
+          We present a structured light technology that combines acousto-optic light steering with an event camera for high-speed full-frame scanning. Left: Schematic of our setup. We use an ultrasonic transducer to sculpt virtual gradient-index (GRIN) cylindrical lenses inside a transparent medium (water). Coupling this setup with pulsed illumination, we can scan the imaged scene with a light plane at speeds three orders of magnitude faster than those of previous light scanning methods, allowing structured light operation at the camera's full-frame bandwidth. Top-right: RGB images, captured at 240 fps, of a scene comprising a fan that rotates at 1800 rpm. The images correspond to the approximate positions of the depth scans below. Bottom-right: Reconstructed depth frames of the rotating fan, scanned at 1000 fps.
+        </h4>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-      <div class="item">
-       <!-- Your image here -->
-       <img src="static/images/hardware_prototype.png" alt="Hardware Prototype"/>
-       <style>
-         .item {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           justify-content: center;
-           height: 100%;
-         }
-         .item img {
-           margin-bottom: 20px;
-         }
-       </style>
-          <h2 class="subtitle has-text-centered">
-            Hardware implementation of the setup shown in the schematic. (a) AO light scanning device. A pulsed laser (PL) emits a
-            beam that is expanded by a convex lens and directed into a refractive medium (RM). An ultrasonic transducer (T),
-            perpendicular to the beam, generates acoustic waves that sculpt cylindrical lenses in the medium. These lenses focus
-            the
-            light into sweeping light planes, which are then redirected by a fixed mirror onto a Galvo mirror. During
-            acousto-optic
-            scanning, the Galvo mirror remains stationary. Conversely, when using the Galvo mirror for scanning, the transducer
-            and
-            pulse frequency are constant. (b) Scanning setup. The AO device from (a) is shown in green. The scene (in cyan)
-            contains
-            orthogonal planes for calibration. The laser and ultrasound are driven by an arbitrary waveform generator (AWG). (c)
-            Phase-lock-loop (PLL) synchronization of the transducer with the pulsed laser, driven via Channels 1 and 2 (Ch1, Ch2)
-            of
-            the AWG. Channel 1’s output is amplified using an amplifier (Amp). This PLL synchronization ensures accurate pulse
-            placement with respect to the ultrasound.
-            </h2>
-          </div>
-     
-      <div class="item">
-        <img src="static/images/galvo_vs_us.png" alt="Galvo Vs US" />
-        <style>
-          .item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-          }
-        
-          .item img {
-            margin-bottom: 20px;
-          }
-          </style>
-          <h2 class="subtitle has-text-centered">
-            <strong>Adaptive scanning</strong> of two regions of interest (orange knobs) in a scene shown in (a). We aim to illuminate and
-            3D scan only the knobs (b), using both the Galvo mirror and our AO device. In (c), we show the depth error measured for
-            these knobs when we scan with the two devices. At low scan rates, the Galvo mirror is effective at adaptively scanning
-            only the knobs, but its performance deteriorates as the scan rate increases: Due to the need to mechanically rotate the
-            beam from one location to another, the Galvo mirror must also illuminate the region between the knobs. At high scanning
-            speeds, the fraction of total scanning time spent illuminating this region increases, decreasing performance. By
-            contrast, our AO device can illuminate only the knobs, resulting in effective adaptive scanning even at
-            10&nbsp;kfps.
-          </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/light_plane_movement.png" alt="Light Plane Movement with US" />
-        <style>
-          .item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-          }
-      
-          .item img {
-            margin-bottom: 20px;
-          }
-        </style>
-        <h2 class="subtitle has-text-centered">
-          (a) We show the refractive index profile created by the ultrasonic transducer and how light traveling from
-          bottom to top focuses onto lines. (b) As the refractive index profile evolves over time, the focal line is steered
-          across the medium. (c) Captured images demonstrate the temporal movement of the focused line.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/adaptive_light_plane_placement.png" alt="Adaptive Light Plane Placement" />
-        <style>
-          .item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-          }
-      
-          .item img {
-            margin-bottom: 20px;
-          }
-        </style>
-        <h2 class="subtitle has-text-centered">
-          <strong>Experimental validation of arbitrary line scanning.</strong> Our AO device allows us to place each of the
-          2-million lines it produces at any desired location. To validate this ability, we use a fast photodetector (PD) mounted
-          on a stage (a). We illuminate two arbitrary lines (Line 1 and Line 2) and translate the PD to their locations. We show
-          the output of the PD in plots (c)--(e) (top: PD is on a point on Line 1, bottom: PD is on a point on Line 2) for
-          various choices of illumination sequences. In (c), we alternately illuminate Line 1 and Line 2, corresponding to the
-          odd and even peaks in the PD output. In (d), we illuminate Line 1 for 100 laser pulses and Line 2 for 100 laser
-          pulses, corresponding to a PD output that is a square waveform of frequency 10 kHz. In (e), we illuminate
-          Line 1 for 50 laser pulses and Line 2 for 150 laser pulses, corresponding to a PD output that has a duty cycle of
-          25% when it is on Line 1 and 75% when it is on Line 2.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/megahertz_line_speed.png" alt="Megahertz line speed" />
-        <style>
-          .item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-          }
-      
-          .item img {
-            margin-bottom: 20px;
-          }
-        </style>
-        <h2 class="subtitle has-text-centered">
-          <strong>Experimental validation of high-speed line scanning.</strong>
-          (a) Experimental setup showing a fast photodetector placed in front of our AO scanning system. The detector output increases when the scanned line crosses it.
-          (b) Visualization of the projected scanning line illuminating the photodetector. Bottom: Oscilloscope traces read out from the photodetector. The traces show periodic intensity peaks corresponding to scanning frequencies of 1 kfps, 10 kfps, and 100 kfps (left to right). The temporal spacing between adjacent peaks confirms successful line scanning at these frequencies.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/dynamic_results.png" alt="Dynamic Results" />
-        <style>
-          .item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-          }
-      
-          .item img {
-            margin-bottom: 20px;
-          }
-        </style>
-        <h2 class="subtitle has-text-centered">
-          <strong>Non-periodic dynamic scenes:</strong> Depth scans of characters "IC", "CP", and "25", covered with retroreflecting tape. In the top and middle rows, the characters are mounted on a stick and moved rapidly in a top-to-bottom (&#8597;) sweeping motion, with some additional forward-backward translation (&#8857;). In the bottom row, the characters are swung by hand using a string. For each row, the RGB image to the left shows the scene and visualizes the approximate motion trajectory. The images to the right show the depth frames at different points of the trajectory, captured at 180 fps (top and middle row) or 200 fps (bottom row). The supplement includes a video of continuous depth scanning as the targets move.
-        </h2>
-      </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
+  </section>  <!-- Abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/aosl-video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>We introduce a structured light system that enables full-frame 3D scanning at speeds of 1000 fps, four times faster than the previous fastest systems. Our key innovation is the use of a custom acousto-optic light scanning device capable of projecting two million light planes per second. Coupling this device with an event camera allows our system to overcome the key bottleneck preventing previous structured light systems based on event cameras from achieving higher scanning speeds---the limited rate of illumination steering. Unlike these previous systems, ours uses the event camera's full-frame bandwidth, shifting the speed bottleneck from the illumination side to the imaging side. To mitigate this new bottleneck and further increase scanning speed, we introduce adaptive scanning strategies that leverage the event camera's asynchronous operation by selectively illuminating regions of interest, thereby achieving effective scanning speeds an order of magnitude beyond the camera's theoretical limit.</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section> -->
-<!-- End youtube video -->
-
-<!-- Paper poster --> -->
- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-      <iframe  src="static/pdfs/aosl_poster.pdf" width="100%" height="550">
-          </iframe>
+  </section>  <!-- Optional Method -->  <!-- Carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+  <img src="static/gallery/hardware_prototype.png" alt="hardware prototype" />
+  <h2 class="subtitle has-text-centered">Hardware implementation of the setup shown in the schematic. (a) AO light scanning device. A pulsed laser (PL) emits a beam that is expanded by a convex lens and directed into a refractive medium (RM). An ultrasonic transducer (T), perpendicular to the beam, generates acoustic waves that sculpt cylindrical lenses in the medium. These lenses focus the light into sweeping light planes, which are then redirected by a fixed mirror onto a Galvo mirror. During acousto-optic scanning, the Galvo mirror remains stationary. Conversely, when using the Galvo mirror for scanning, the transducer and pulse frequency are constant. (b) Scanning setup. The AO device from (a) is shown in green. The scene (in cyan) contains orthogonal planes for calibration. The laser and ultrasound are driven by an arbitrary waveform generator (AWG). (c) Phase-lock-loop (PLL) synchronization of the transducer with the pulsed laser, driven via Channels 1 and 2 (Ch1, Ch2) of the AWG. Channel 1’s output is amplified using an amplifier (Amp). This PLL synchronization ensures accurate pulse placement with respect to the ultrasound.</h2>
+</div><div class="item">
+  <img src="static/gallery/galvo_vs_us.png" alt="galvo vs us" />
+  <h2 class="subtitle has-text-centered">Adaptive scanning of two regions of interest (orange knobs) in a scene shown in (a). We aim to illuminate and 3D scan only the knobs (b), using both the Galvo mirror and our AO device. In (c), we show the depth error measured for these knobs when we scan with the two devices. At low scan rates, the Galvo mirror is effective at adaptively scanning only the knobs, but its performance deteriorates as the scan rate increases: Due to the need to mechanically rotate the beam from one location to another, the Galvo mirror must also illuminate the region between the knobs. At high scanning speeds, the fraction of total scanning time spent illuminating this region increases, decreasing performance. By contrast, our AO device can illuminate only the knobs, resulting in effective adaptive scanning even at 10 kfps.</h2>
+</div><div class="item">
+  <img src="static/gallery/light_plane_movement.png" alt="light plane movement" />
+  <h2 class="subtitle has-text-centered">(a) We show the refractive index profile created by the ultrasonic transducer and how light traveling from bottom to top focuses onto lines. (b) As the refractive index profile evolves over time, the focal line is steered across the medium. (c) Captured images demonstrate the temporal movement of the focused line.</h2>
+</div><div class="item">
+  <img src="static/gallery/adaptive_light_plane_placement.png" alt="adaptive light plane placement" />
+  <h2 class="subtitle has-text-centered">Experimental validation of arbitrary line scanning. Our AO device allows us to place each of the 2-million lines it produces at any desired location. To validate this ability, we use a fast photodetector (PD) mounted on a stage (a). We illuminate two arbitrary lines (Line 1 and Line 2) and translate the PD to their locations. We show the output of the PD in plots (c)--(e) (top: PD is on a point on Line 1, bottom: PD is on a point on Line 2) for various choices of illumination sequences. In (c), we alternately illuminate Line 1 and Line 2, corresponding to the odd and even peaks in the PD output. In (d), we illuminate Line 1 for 100 laser pulses and Line 2 for 100 laser pulses, corresponding to a PD output that is a square waveform of frequency 10 kHz. In (e), we illuminate Line 1 for 50 laser pulses and Line 2 for 150 laser pulses, corresponding to a PD output that has a duty cycle of 25% when it is on Line 1 and 75% when it is on Line 2.</h2>
+</div><div class="item">
+  <img src="static/gallery/megahertz_line_speed.png" alt="megahertz line speed" />
+  <h2 class="subtitle has-text-centered">Experimental validation of high-speed line scanning. (a) Experimental setup showing a fast photodetector placed in front of our AO scanning system. The detector output increases when the scanned line crosses it. (b) Visualization of the projected scanning line illuminating the photodetector. Bottom: Oscilloscope traces read out from the photodetector. The traces show periodic intensity peaks corresponding to scanning frequencies of 1 kfps, 10 kfps, and 100 kfps (left to right). The temporal spacing between adjacent peaks confirms successful line scanning at these frequencies.</h2>
+</div><div class="item">
+  <img src="static/gallery/dynamic_results.png" alt="dynamic results" />
+  <h2 class="subtitle has-text-centered">Non-periodic dynamic scenes: Depth scans of characters "IC", "CP", and "25", covered with retroreflecting tape. In the top and middle rows, the characters are mounted on a stick and moved rapidly in a top-to-bottom (↕) sweeping motion, with some additional forward-backward translation (⊙). In the bottom row, the characters are swung by hand using a string. For each row, the RGB image to the left shows the scene and visualizes the approximate motion trajectory. The images to the right show the depth frames at different points of the trajectory, captured at 180 fps (top and middle row) or 200 fps (bottom row). The supplement includes a video of continuous depth scanning as the targets move.</h2>
+</div>
+        </div>
       </div>
     </div>
-  </section> 
-<!--End paper poster
-
-
-<!--BibTex citation -->
+  </section>  <!-- Optional Talk Video -->  <!-- Optional Poster -->  <!-- Acknowledgments --><section class="section" id="Acknowledgments">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Acknowledgments</h2>
+    <p>This work was supported by the National Science Foundation under awards 2047341, 2107454, 2326904, and 2403122, as well as a Sloan Research Fellowship for Ioannis Gkioulekas. We thank Aniket Dashpute (Rice University) and Manasi Muglikar (University of Zurich) for their valuable insights on event camera parameters. We also thank Ziyuan (Quinton) Qu and Sarah K. Friday (Dartmouth College), for their assistance in setting up the experimental scenes.</p>
+  </div>
+</section>  <!-- BibTeX -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>
-        @article{sirikonda2024structured,
-        title={Structured light with a million light planes per second},
-        author={Sirikonda, Dhawal and Chakravarthula, Praneeth and Gkioulekas, Ioannis and Pediredla, Adithya},
-        journal={arXiv preprint arXiv:2411.18597},
-        year={2024}}</code></pre>
+      <pre><code>@article{sirikonda2025structured,  
+title={Structured light with a million light planes per second},  
+author={Sirikonda, Dhawal and Chakravarthula, Praneeth and Gkioulekas, Ioannis and Pediredla, Adithya},  
+journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},  
+year={2025},
+publisher={IEEE}
+}</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
-
-
+  </section>  <!-- Footer -->
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the
+              <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>,
+              adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code — please link back in the footer.
+              Licensed under
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                Creative Commons Attribution-ShareAlike 4.0 International License
+              </a>.
+              <br/>
+              The fonts are borrowed from <a href="https://github.com/dartmouth-risc-lab/conf-fonts" target="_blank">online sources</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
